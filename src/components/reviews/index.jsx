@@ -6,31 +6,31 @@ function Reviews() {
   const [tasks, setTasks] = useState([
     {
       id: 1,
-      title: "Tarea 1",
+      title: "Pollo Tip Top",
       body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
       list: 1,
     },
     {
       id: 2,
-      title: "Tarea 2",
+      title: "Pizza Hut",
       body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
       list: 1,
     },
     {
       id: 3,
-      title: "Tarea 3",
+      title: "Valentis Pizza",
       body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
       list: 3,
     },
     {
       id: 4,
-      title: "Tarea 4",
+      title: "Gambei Arroz chino",
       body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
       list: 2,
     },
     {
       id: 5,
-      title: "Tarea 5",
+      title: "Toro Asado",
       body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
       list: 2,
     },
