@@ -8,8 +8,8 @@ import './index.css'
 function FormContact() {
     const form = useRef()
     const [formData, setFormData] = useState({
-        user_name: '',
-        user_email: '',
+        name: '',
+        email: '',
         message: '',
     })
 
@@ -20,8 +20,8 @@ function FormContact() {
             (result) => {
                 console.log(result.text)
                 setFormData({
-                    user_name: '',
-                    user_email: '',
+                    name: '',
+                    email: '',
                     message: '',
                 })
             },
@@ -77,9 +77,9 @@ function FormContact() {
                                 <input
                                     type='text'
                                     className='contact__input'
-                                    name='user_name'
+                                    name='name'
                                     required=''
-                                    value={formData.user_name}
+                                    value={formData.name}
                                     onChange={handleChange}
                                 />
                             </div>
@@ -88,9 +88,9 @@ function FormContact() {
                                 <input
                                     type='email'
                                     className='contact__input'
-                                    name='user_email'
+                                    name='email'
                                     required=''
-                                    value={formData.user_email}
+                                    value={formData.email}
                                     onChange={handleChange}
                                 />
                             </div>
