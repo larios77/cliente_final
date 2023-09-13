@@ -1,0 +1,140 @@
+.main__form{
+    margin: 2rem 0 8rem 0;
+}
+.title__contactanos {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #222;
+    text-transform: uppercase;
+    justify-content: center;
+    margin: 8rem 0 4rem 0;
+  }
+  .container__form-contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 2rem auto;
+  }
+  .container__info-contact{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .content__info-contact div h3{
+    display: flex;
+    align-items: center;
+    color: #222;
+    font-family: "Poppins", sans-serif;
+  }
+  .content__info-contact div svg{
+    margin-right: .8rem;
+    font-size: 1.4rem;
+    color: #222;
+  }
+  .content__info-contact div span{
+    font-family: "Poppins", sans-serif;
+    color: #303030;
+    font-weight: 500;
+  }
+  /* formulario */
+
+  .container__form{
+    display: grid;
+    gap: 1.5rem;
+    width: 650px;
+  }
+  .content__form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+  }
+  .contact__content{
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem 0.25rem;
+    border: 1px solid #293789;
+  }
+  .contact__content .contact__label{
+    font-family: "Poppins", sans-serif;
+    color: #293789;
+  }
+  .contact__content .contact__input{
+    width: 100%;
+    background-color: #fff;
+    color: var(--text);
+    font-family: Poppins, sans-serif;
+    border: none;
+    outline: none;
+    padding: 0.25rem 0.5rem 0.5rem 0px;
+  }
+  .contact__content textarea{
+    resize: none;
+  }
+  .button__contact{
+      background: #293789;
+      color: rgb(255, 255, 255);
+      padding: 1rem;
+      font-family: Poppins, sans-serif;
+      border-radius: 0.5rem;
+      font-weight: 500;
+      outline: none;
+      border: none;
+      transition: .5s ease;
+      cursor: pointer;
+  }
+  .button__contact:hover{
+    background-color: rgb(71, 0, 195);
+  }
+  /* formulario end*/
+
+  @media only screen and (max-width:1440px){
+    .container__form{
+        width: 550px;
+    }
+  }
+  @media only screen and (max-width:1200px){
+    .container__form{
+        width: 450px;
+    }
+  }
+  @media only screen and (max-width:1024px){
+    .content__form{
+        grid-template-columns: 1fr;
+    }
+  }
+  @media only screen and (max-width:700px){
+    .container__form-contact{
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+    }
+    .container__form{
+        margin: 2rem auto 0 auto;
+        width: 80%;
+    }
+  }
+  @media only screen and (max-width:500px){
+    .container__info-contact{
+        margin: 0;
+    }
+    .drag-and-drop{
+      margin: 0 1rem;
+    }
+    .title__contactanos {
+        font-size: 20px;
+        line-height: 25px;
+      }
+    .content__info-contact div h3{
+        font-size: 18px;
+      }
+      .content__info-contact div span, .contact__label{
+        font-size: 14px;
+      }
+    .container__form{
+        width: 100%;
+    }
+  }

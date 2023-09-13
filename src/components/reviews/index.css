@@ -1,0 +1,117 @@
+/*
+    **Drag and Drop component
+*/
+.title__reviews {
+  text-align: center;
+  color: #222;
+  margin-top: 2rem;
+}
+.icon-react {
+  width: 60px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6f8fc;
+  padding: 24px 12px;
+  border-radius: 8px;
+  border-top: 7px solid;
+  box-shadow: 0 8px 16px rgba(#333, 0.1);
+  min-height: 200px;
+}
+.content__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.content__stars h4{
+  margin: 0 1rem !important;
+}
+.content__stars svg{
+  color: #ffcd29;
+  font-size: 1.5rem;
+}
+/* DRAG AND DROP */
+.drag-and-drop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+  margin: 4rem;
+}
+@media only screen and (max-width: 1200px) {
+  .drag-and-drop {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .drag-and-drop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .drag-and-drop {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.column--1 {
+  border-color: #ffcd29;
+}
+.column h3,
+h4 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.column--1 .title {
+  color: #ffcd29;
+}
+
+.column--2 {
+  border-color: #5ca9ff;
+}
+
+.column--2 .title {
+  color: #5ca9ff;
+}
+
+.column--3 {
+  border-color: #ff9429;
+}
+
+.column--3 .title {
+  color: #ffcd29;
+}
+.column--4 {
+  border-color: red;
+}
+
+.column--4 .title {
+  color: red;
+}
+
+.dd-zone {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
+  height: 100%;
+}
+
+.dd-element {
+  font-size: 18px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 26px 20px;
+  cursor: pointer;
+  color: #5b5b73;
+}
+
+.dd-element .body {
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
