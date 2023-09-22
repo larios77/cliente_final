@@ -65,7 +65,7 @@ function FormContact() {
                                 <h3>
                                     <FaMapMarkerAlt /> Ubicación
                                 </h3>
-                                <span>Residencial Bolonia, casa#11, Managua, Nicaragua.</span>
+                                <span>Residencial Bolonia, Managua, Nicaragua.</span>
                             </div>
                         </div>
                     </div>

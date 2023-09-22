@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { LiaStarSolid } from "react-icons/lia";
+import { AiFillDislike } from "react-icons/ai";
 import "./index.css";
 
 function Reviews() {
@@ -68,9 +69,13 @@ function Reviews() {
       <div className="drag-and-drop" id="critic">
         <div className="column column--1">
           <h3>A</h3>
-          <div className="content__stars">
+          <div className="content__icon stars">
+            <LiaStarSolid />
+            <LiaStarSolid />
             <LiaStarSolid />
             <h4>Excelente</h4>
+            <LiaStarSolid />
+            <LiaStarSolid />
             <LiaStarSolid />
           </div>
           <div
@@ -95,7 +100,13 @@ function Reviews() {
 
         <div className="column column--2">
           <h3>B</h3>
-          <h4>Muy Bueno</h4>
+          <div className="content__icon stars">
+            <LiaStarSolid />
+            <LiaStarSolid />
+            <h4>Muy Bueno</h4>
+            <LiaStarSolid />
+            <LiaStarSolid />
+          </div>
           <div
             className="dd-zone"
             droppable="true"
@@ -118,7 +129,11 @@ function Reviews() {
 
         <div className="column column--3">
           <h3>C</h3>
-          <h4>Bueno</h4>
+          <div className="content__icon stars">
+            <LiaStarSolid />
+            <h4>Bueno</h4>
+            <LiaStarSolid />
+          </div>
           <div
             className="dd-zone"
             droppable="true"
@@ -140,7 +155,11 @@ function Reviews() {
         </div>
         <div className="column column--4">
           <h3>D</h3>
-          <h4>Deficiente</h4>
+          <div className="content__icon dislike">
+            <AiFillDislike />
+            <h4>Deficiente</h4>
+            <AiFillDislike />
+          </div>
           <div
             className="dd-zone"
             droppable="true"

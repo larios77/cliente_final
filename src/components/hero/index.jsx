@@ -9,7 +9,7 @@ function Hero() {
         <img src={HeroImg} alt="hero bg" loading="lazy" decoding="async" />
         <div className="content__hero">
           <h3>Bienvenido a El Cliente Final</h3>
-          <h1>Su Destino Definitivo <br /> Para Crítica Culinaria</h1>
+          <h1>Tu destino de criticas de <br />higiene e inocuidad culinaria</h1>
           <a href="#contact">Contáctanos</a>
         </div>
       </section>

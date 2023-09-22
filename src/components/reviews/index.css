@@ -20,17 +20,25 @@
   box-shadow: 0 8px 16px rgba(#333, 0.1);
   min-height: 200px;
 }
-.content__stars {
+.column h4{
+  margin-bottom: 0 !important;
+}
+.content__icon,.content__icon {
+  margin-bottom: 1rem;
+}
+.content__icon{
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
 }
-.content__stars h4{
+/* .content__stars h4{
   margin: 0 1rem !important;
+} */
+.dislike svg{
+  color: red;
+  font-size: 1.5rem;
 }
-.content__stars svg{
+.stars svg{
   color: #ffcd29;
   font-size: 1.5rem;
 }
@@ -72,19 +80,19 @@ h4 {
 }
 
 .column--2 {
-  border-color: #5ca9ff;
+  border-color: #12a312;
 }
 
 .column--2 .title {
-  color: #5ca9ff;
+  color: #12a312;
 }
 
 .column--3 {
-  border-color: #ff9429;
+  border-color: #384cff;
 }
 
 .column--3 .title {
-  color: #ffcd29;
+  color: #384cff;
 }
 .column--4 {
   border-color: red;
