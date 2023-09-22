@@ -4,7 +4,7 @@ import { AiFillDislike } from "react-icons/ai";
 import "./index.css";
 
 function Reviews() {
-  const [tasks, setTasks] = useState([
+  const [tasks] = useState([
     {
       id: 1,
       title: "Pollo Tip Top",
@@ -41,27 +41,27 @@ function Reviews() {
     return tasks.filter((item) => item.list === list);
   };
 
-  const startDrag = (evt, item) => {
-    evt.dataTransfer.setData("itemID", item.id);
-    console.log(item);
-  };
+  // const startDrag = (evt, item) => {
+  //   evt.dataTransfer.setData("itemID", item.id);
+  //   console.log(item);
+  // };
 
-  const draggingOver = (evt) => {
-    evt.preventDefault();
-  };
+  // const draggingOver = (evt) => {
+  //   evt.preventDefault();
+  // };
 
-  const onDrop = (evt, list) => {
-    const itemID = evt.dataTransfer.getData("itemID");
-    const item = tasks.find((item) => item.id == itemID);
-    item.list = list;
+  // const onDrop = (evt, list) => {
+  //   const itemID = evt.dataTransfer.getData("itemID");
+  //   const item = tasks.find((item) => item.id == itemID);
+  //   item.list = list;
 
-    const newState = tasks.map((task) => {
-      if (task.id === itemID) return item;
-      return task;
-    });
+  //   const newState = tasks.map((task) => {
+  //     if (task.id === itemID) return item;
+  //     return task;
+  //   });
 
-    setTasks(newState);
-  };
+  //   setTasks(newState);
+  // };
 
   return (
     <>
@@ -80,21 +80,21 @@ function Reviews() {
           </div>
           <div
             className="dd-zone"
-            droppable="true"
-            onDragOver={(evt) => draggingOver(evt)}
-            onDrop={(evt) => onDrop(evt, 1)}
+            // droppable="true"
+            // onDragOver={(evt) => draggingOver(evt)}
+            // onDrop={(evt) => onDrop(evt, 1)}
           >
             {getList(1).map((item) => (
               <div
                 className="dd-element"
                 key={item.id}
-                draggable
-                onDragStart={(evt) => startDrag(evt, item)}
+                // draggable
+                // onDragStart={(evt) => startDrag(evt, item)}
               >
-                <strong className="title">{item.title}</strong>
-                <p className="body">{item.body}</p>
+                <strong className="title">Pollo Tip Top</strong>
+                <p className="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.</p>
               </div>
-            ))}
+             ))} 
           </div>
         </div>
 
@@ -109,16 +109,16 @@ function Reviews() {
           </div>
           <div
             className="dd-zone"
-            droppable="true"
-            onDragOver={(evt) => draggingOver(evt)}
-            onDrop={(evt) => onDrop(evt, 2)}
+            // droppable="true"
+            // onDragOver={(evt) => draggingOver(evt)}
+            // onDrop={(evt) => onDrop(evt, 2)}
           >
             {getList(2).map((item) => (
               <div
                 className="dd-element"
                 key={item.id}
-                draggable
-                onDragStart={(evt) => startDrag(evt, item)}
+                // draggable
+                // onDragStart={(evt) => startDrag(evt, item)}
               >
                 <strong className="title">{item.title}</strong>
                 <p className="body">{item.body}</p>
@@ -136,16 +136,16 @@ function Reviews() {
           </div>
           <div
             className="dd-zone"
-            droppable="true"
-            onDragOver={(evt) => draggingOver(evt)}
-            onDrop={(evt) => onDrop(evt, 3)}
+            // droppable="true"
+            // onDragOver={(evt) => draggingOver(evt)}
+            // onDrop={(evt) => onDrop(evt, 3)}
           >
             {getList(3).map((item) => (
               <div
                 className="dd-element"
                 key={item.id}
-                draggable
-                onDragStart={(evt) => startDrag(evt, item)}
+                // draggable
+                // onDragStart={(evt) => startDrag(evt, item)}
               >
                 <strong className="title">{item.title}</strong>
                 <p className="body">{item.body}</p>
@@ -162,16 +162,16 @@ function Reviews() {
           </div>
           <div
             className="dd-zone"
-            droppable="true"
-            onDragOver={(evt) => draggingOver(evt)}
-            onDrop={(evt) => onDrop(evt, 4)}
+            // droppable="true"
+            // onDragOver={(evt) => draggingOver(evt)}
+            // onDrop={(evt) => onDrop(evt, 4)}
           >
             {getList(4).map((item) => (
               <div
                 className="dd-element"
                 key={item.id}
-                draggable
-                onDragStart={(evt) => startDrag(evt, item)}
+                // draggable
+                // onDragStart={(evt) => startDrag(evt, item)}
               >
                 <strong className="title">{item.title}</strong>
                 <p className="body">{item.body}</p>
