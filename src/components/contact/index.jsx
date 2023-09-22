@@ -81,7 +81,7 @@ function Contact() {
         <div className="content__columns-footer">
           <h2 className="subtitle__footer">Ubicacion</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.824419393936!2d-86.25951152408349!3d12.12416303288908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7155b2ced0d0b5%3A0x7609347e3aaf0b85!2sCasa%20%23%2011!5e0!3m2!1sen!2sni!4v1694620604003!5m2!1sen!2sni"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124838.69974022424!2d-86.34086159686323!3d12.09781471371201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1sen!2sni!4v1695398783250!5m2!1sen!2sni"
             width="100%"
             height="200"
             title="map"
