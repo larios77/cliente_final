@@ -7,32 +7,32 @@ function Reviews() {
   const [tasks] = useState([
     {
       id: 1,
-      title: "Pollo Tip Top",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
+      title: "",
+      body: "",
       list: 1,
     },
     {
       id: 2,
-      title: "Pizza Hut",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
+      title: "",
+      body: "",
       list: 1,
     },
     {
       id: 3,
-      title: "Valentis Pizza",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
+      title: "",
+      body: "",
       list: 3,
     },
     {
       id: 4,
-      title: "Gambei Arroz chino",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
+      title: "",
+      body: "",
       list: 2,
     },
     {
       id: 5,
-      title: "Toro Asado",
-      body: "Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.",
+      title: "",
+      body: "",
       list: 2,
     },
   ]);
@@ -91,8 +91,8 @@ function Reviews() {
                 // draggable
                 // onDragStart={(evt) => startDrag(evt, item)}
               >
-                <strong className="title">Pollo Tip Top</strong>
-                <p className="body">Lorem, ipsum dolor sit amet consectetur adipisicing elit ipsum dolor.</p>
+                <strong className="title">{item.title}</strong>
+                <p className="body">{item.body}</p>
               </div>
              ))} 
           </div>

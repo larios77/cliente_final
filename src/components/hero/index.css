@@ -33,7 +33,7 @@
   font-weight: 400;
   line-height: 100px;
   margin-top: 2rem;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 .container__hero .content__hero a {
   width: 270px;
