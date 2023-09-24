@@ -10,31 +10,7 @@ function Reviews() {
       title: "",
       body: "",
       list: 1,
-    },
-    {
-      id: 2,
-      title: "",
-      body: "",
-      list: 1,
-    },
-    {
-      id: 3,
-      title: "",
-      body: "",
-      list: 3,
-    },
-    {
-      id: 4,
-      title: "",
-      body: "",
-      list: 2,
-    },
-    {
-      id: 5,
-      title: "",
-      body: "",
-      list: 2,
-    },
+    },   
   ]);
 
   const getList = (list) => {
@@ -65,7 +41,7 @@ function Reviews() {
 
   return (
     <>
-      <h2 className="title__reviews">Críticas</h2>
+      <h2 className="title__reviews">Calificaciones de higiene e inocuidad:</h2>
       <div className="drag-and-drop" id="critic">
         <div className="column column--1">
           <h3>A</h3>

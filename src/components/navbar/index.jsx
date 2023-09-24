@@ -19,7 +19,7 @@ function NavbarMenu() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#home">Inicio</Nav.Link>
-              <Nav.Link href="#critic">Críticas</Nav.Link>
+              <Nav.Link href="#critic">Calificaciones</Nav.Link>
               <Nav.Link href="#contact">Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
